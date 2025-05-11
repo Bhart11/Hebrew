@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hebrew Learning App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .episode-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .episode-title {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+        }
+        .episode-meta {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .transcript {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .vocabulary-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .vocabulary-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .vocabulary-item:last-child {
+            border-bottom: none;
+        }
+        .grammar-tips {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .loading-spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hebrew Learning App</h1>
+        
+        <div class="episode-card">
+            <h2 class="episode-title">היום הראשון במשרד</h2>
+            <p class="episode-meta">Level 2 • Beginner • 2 new words</p>
+            
+            <div class="transcript">
+                <pre>
+שלום! אני כאן במשרד הראשון שלי.
+המנהל נחמד מאוד, והוא הציג אותי לכולם.
+יש לי מكتب גדול עם חלון יפה.
+אני צריך ללמוד את כל הרגלים כאן.
+                </pre>
+            </div>
+
+            <div class="vocabulary-list">
+                <div class="vocabulary-item">
+                    <span>משרד</span>
+                    <span>Office (noun)</span>
+                </div>
+                <div class="vocabulary-item">
+                    <span>מكتب</span>
+                    <span>Desk (noun)</span>
+                </div>
+            </div>
+
+            <div class="grammar-tips">
+                <h3>Grammar Tips</h3>
+                <ul>
+                    <li>השימוש ב-אני עם הפועל הפעיל</li>
+                    <li>ההבדל בין מكتب למשרד</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
